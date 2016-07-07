@@ -3,5 +3,8 @@
 /.project
 /.settings/
 /dependency-reduced-pom.xml
+/log.html
 /log/*.log
+/output.xml
+/report.html
 /target/
