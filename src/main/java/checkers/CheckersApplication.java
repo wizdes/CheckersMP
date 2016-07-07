@@ -1,5 +1,6 @@
 package checkers;
 
+import checkers.ping.PingResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Environment;
 
@@ -11,8 +12,7 @@ public class CheckersApplication extends Application<CheckersConfiguration>{
 
 	@Override
 	public void run(final CheckersConfiguration configuration, final Environment environment) throws Exception {
-		// TODO Auto-generated method stub
-
+		environment.jersey().register(new PingResource());
 	}
 
 }
